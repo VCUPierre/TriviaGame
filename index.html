@@ -4,12 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Trivia Game</title>
 </head>
 <body>
-    
+<div class="container">
+<div id="Start-Finish" class="">
+</div>
 
+<div id="Form" class="jumbotron d-none mt-5 text-center">
+    <h1 class="display-4">You don't know 'The Office' Trivia Game</h1>
+    <hr class="mt-4 mb-0">
+    <div id="timer" class="col-12">
+        <div class="countdownTimer"></div>
+    </div>
+    <form>
+            <div id="Q1" class="col-12 form-group">
+                <legend class="col-form-label pt-0">What was the name of Angela's sick cat that Dwight killed?</legend>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1RadioOptions" id="inlineRadio1" value="0">
+                    <label class="form-check-label" for="inlineRadio1">Angel Tail</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1RadioOptions" id="inlineRadio2" value="1">
+                    <label class="form-check-label" for="inlineRadio2">Sprinkles</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1RadioOptions" id="inlineRadio3" value="2">
+                    <label class="form-check-label" for="inlineRadio3">Mr. Longwhiskers</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="Q1RadioOptions" id="inlineRadio3" value="3">
+                    <label class="form-check-label" for="inlineRadio3">Princess Puss</label>
+                </div><hr>
+            </div>
+            <div id="Q2" class="col-12 form-group">
+                    <legend class="col-form-label pt-0">What is Michael's favorite joke of all time?</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q2RadioOptions" id="inlineRadio1" value="0">
+                        <label class="form-check-label" for="inlineRadio1">Your mama's so fat!</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q2RadioOptions" id="inlineRadio2" value="1">
+                        <label class="form-check-label" for="inlineRadio2">You sound like my grandma.</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q2RadioOptions" id="inlineRadio3" value="2">
+                        <label class="form-check-label" for="inlineRadio3">That's what she said.</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q2RadioOptions" id="inlineRadio3" value="3">
+                        <label class="form-check-label" for="inlineRadio3">Can I have some fries with that shake?</label>
+                    </div><hr>
+            </div>
+            <div id="Q3" class="col-12 form-group">
+                    <legend class="col-form-label pt-0">According to Michael, who is the hottest employee in the office?</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q3RadioOptions" id="inlineRadio1" value="0">
+                        <label class="form-check-label" for="inlineRadio1">Pam</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q3RadioOptions" id="inlineRadio2" value="1">
+                        <label class="form-check-label" for="inlineRadio2">Michael</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q3RadioOptions" id="inlineRadio3" value="2">
+                        <label class="form-check-label" for="inlineRadio3">Erin</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q3RadioOptions" id="inlineRadio3" value="3">
+                        <label class="form-check-label" for="inlineRadio3">Ryan</label>
+                    </div><hr>
+            </div>
+            <div id="Q4" class="col-12 form-group">
+                    <legend class="col-form-label pt-0">What special event does Michael host for his employees every year?</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q4RadioOptions" id="inlineRadio1" value="0">
+                        <label class="form-check-label" for="inlineRadio1">The Mifflins</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q4RadioOptions" id="inlineRadio2" value="1">
+                        <label class="form-check-label" for="inlineRadio2">The Dunfies</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q4RadioOptions" id="inlineRadio3" value="2">
+                        <label class="form-check-label" for="inlineRadio3">The Dundies</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q4RadioOptions" id="inlineRadio3" value="3">
+                        <label class="form-check-label" for="inlineRadio3">The Mifflies</label>
+                    </div><hr>
+            </div>
+            <div id="Q5" class="col-12 form-group">
+                    <legend class="col-form-label pt-0">What is the happiest day of Michael's life?</legend>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q5RadioOptions" id="inlineRadio1" value="0">
+                        <label class="form-check-label" for="inlineRadio1">Toby's goodbye party</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q5RadioOptions" id="inlineRadio2" value="1">
+                        <label class="form-check-label" for="inlineRadio2">His Wedding Day</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q5RadioOptions" id="inlineRadio3" value="2">
+                        <label class="form-check-label" for="inlineRadio3">His first day at Dunder Mifflin </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="Q5RadioOptions" id="inlineRadio3" value="3">
+                        <label class="form-check-label" for="inlineRadio3">The day he was made Branch Manager</label>
+                    </div><hr>
+            </div>
+            <a class="btn btn-primary btn-cust" role="button" id="SubmitBtn">Submit</a>
+    </form>
+</div>
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
 <script src="assets/js/app.js"></script>
 </body>
 </html>

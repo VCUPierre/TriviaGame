@@ -1,0 +1,21 @@
+p{
+    margin-bottom: 0;
+}
+br{
+    margin-bottom: 50px;
+}
+body{
+    background-image: url("../imgs/background.jpg");
+    background-size: 100%;
+}
+.glassJumbo{
+    background-color: rgba(233, 236, 239, 0.50);
+}
+.btn-cust{
+    padding: 1rem 4rem;
+    color: white !important;
+    font-size: 2rem;
+}
+.countdownTimer{
+    font-size: 5rem;
+}
