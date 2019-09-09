@@ -73,18 +73,20 @@ function timer() {
 
 function answerCheck(){
     var correct = 0, incorrect = 0, notAnswer = 0;
-    let q0 = parseInt($("#Q1 input[type='radio']:checked").val());
+    /*let q0 = parseInt($("#Q1 input[type='radio']:checked").val());
     let q1 = parseInt($("#Q2 input[type='radio']:checked").val());
     let q2 = parseInt($("#Q3 input[type='radio']:checked").val());
     console.log("Q1: " + q0);
     console.log("Q2: " + q1);
     console.log("Q3: " + q2);
+    */
      
     for (let i = 1; i <= questionAnswers.length; i++){
         let q = parseInt($("#Q"+i+" input[type='radio']:checked").val());
+        console.log("Q"+i+": "+ q)
         if ( q === questionAnswers[i - 1]){
             correct++;
-        } else if (!q){
+        } else if (!q && q !== 0){
             notAnswer++;
         } else {
             incorrect++;
