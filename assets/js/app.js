@@ -25,15 +25,18 @@ function startOrFinish(eventVerb){
 
     if (eventVerb === "start"){
         title1.text("Welcome to");
-        var button = $("<a>", {class: "btn btn-primary btn-cust", role: "button", id: "StartBtn"});
-        button.text("Start");
+        var button = $("<button>", {class: "btn"});
+        var aTag = $("<a>", {class: "btn btn-primary btn-cust", role: "button", id: "StartBtn"});
+        aTag.text("Start");
+        button.append(aTag);
         $("#Start-Finish").append(jumbotron);
         $("#jumbotron").append(title1,title2,breakLine,button);
     } else if (eventVerb === "end"){
         $("#Form").addClass("d-none");
         $("#Start-Finish").removeClass("d-none");
         var array = answerCheck()
-        var button = $("<a>", {class: "btn btn-primary btn-cust", role: "button", id: "restartBtn"});
+        var button = $("<button>", {class: "btn"});
+        var aTag = $("<a>", {class: "btn btn-primary btn-cust", role: "button", id: "restartBtn"});
         var resultsTitle = $("<h1>");
         var correct = $("<h2>", {id: "correct"});
         var incorrect = $("<h2>", {id: "incorrect"});
@@ -42,9 +45,10 @@ function startOrFinish(eventVerb){
         incorrect.text("Incorrect Answers: "+ array[1]);
         notAnswered.text("Unanswered: " +array[2]);
         resultsTitle.text("***Results***");
-        button.text("Play Again");
+        aTag.text("Play Again");
+        button.append(aTag);
         $("#Start-Finish").append(jumbotron);
-        $("#jumbotron").append(title2,breakLine,resultsTitle,correct,incorrect,notAnswered,button);
+        $("#jumbotron").append(title2,breakLine,resultsTitle,correct,incorrect,notAnswered,aTag);
     } else{
         // place holder future
     }
